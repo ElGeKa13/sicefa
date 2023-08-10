@@ -1,0 +1,123 @@
+/* Estilos para el header */
+header {
+    background-color: #1F4E78;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 250px; /* Dejamos espacio para el aside */
+    width: calc(100% - 250px); /* Reducimos el ancho para dejar espacio para el aside */
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    transition: transform 0.3s ease, width 0.3s ease, left 0.3s ease; /* Agregamos transiciones */
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo-container {
+    margin-left: auto;
+}
+
+img.logo {
+    border-radius: 50%;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1F4E78;
+    color: #fff;
+    padding: 10px 0 5px;
+    position: fixed;
+    bottom: 0;
+    left: 250px; /* Dejamos espacio para el aside */
+    width: calc(100% - 250px); /* Reducimos el ancho para dejar espacio para el aside */
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+    transition: left 0.3s ease; /* Agregamos transición para animar el desplazamiento */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    padding: 20px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    position: relative;
+    left: 0; /* Aseguramos que el contenido comience en la izquierda por defecto */
+    transition: transform 0.3s ease; /* Agregamos transición para animar el desplazamiento */
+    left: 250px; /* Dejamos espacio para el aside */
+    width: calc(100% - 250px); /* Reducimos el ancho para dejar espacio para el aside */
+}
+
+.container.menu-active {
+    transform: translateX(250px); /* Desplaza el contenido hacia la derecha cuando el menú está abierto */
+}
+
+/* Estilos para el menú desplegable siempre visible */
+aside.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1F4E78;
+    padding: 10px;
+    z-index: 1;
+    transition: left 0.3s ease; /* Agregamos transición para animar el desplazamiento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centramos verticalmente los elementos del menú */
+}
+
+aside.menu.menu-active {
+    left: -250px; /* Desplaza el menú hacia la izquierda cuando está activo */
+}
+
+aside.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside.menu ul li {
+    margin-bottom: 10px;
+}
+
+aside.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos para los botones personalizados */
+.custom-button {
+    background-color: #1F4E78; /* Fondo azul */
+    color: #fff; /* Letra blanca */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Borde redondeado */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #16507a; /* Cambia el color de fondo al hacer hover */
+}
+
+
+/* Fondo para el div con la clase "fondoClientes" */
+.fondoClientes {
+    background-image: url("IMG/clientes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

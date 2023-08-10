@@ -1,0 +1,59 @@
+header {
+    background-color: #1F4E78;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente los elementos */
+    align-items: center;
+}
+
+.custom-button {
+    margin-right: 20px; /* Espacio entre los botones, ajusta este valor según tus necesidades */
+}
+
+.custom-button:last-child {
+    margin-right: 0; /* Quita el espacio en el último botón */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo-container {
+    margin-left: auto;
+}
+
+img.logo {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #1F4E78;
+    color: #fff;
+    padding: 10px 0 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+#desc {
+    width: 50%;
+    max-width: 50vw;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
